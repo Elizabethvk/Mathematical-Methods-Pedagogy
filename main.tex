@@ -1,0 +1,85 @@
+\documentclass[11,a4paper]{article}
+% \usepackage[margin=2cm,bottom=4cm]{geometry}
+\addtolength{\oddsidemargin}{-.25in}
+\addtolength{\evensidemargin}{-.25in}
+\addtolength{\textwidth}{1.in}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+
+\usepackage[english, bulgarian]{babel}
+
+\usepackage{fancyhdr}
+\usepackage{footmisc}
+\usepackage{calc}
+\usepackage{titling}
+
+\usepackage{float}
+\usepackage{caption}
+
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{mathtext}
+\usepackage{mathtools}
+
+\usepackage{enumerate}
+
+\usepackage{array}
+\usepackage[unicode]{hyperref}
+
+\usepackage{biblatex}
+\addbibresource{ref.bib}
+
+% \usepackage[backend=biber,style=alphabetic]{biblatex}
+% \addbibresource{ref.bib}
+
+
+% \usepackage[draft]{pdfpages}
+
+\usepackage{tikz}
+\usepackage{stackengine}
+\usetikzlibrary{automata,positioning, backgrounds}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+\newcommand{\figref}[1]{\figurename~\ref{#1}}
+
+% \setlength\headheight{3.5em}
+% \setlength{\footskip}{2cm}
+
+% \addtolength{\footnotesep}{0.8em} \renewcommand{\thefootnote}{\textbf{\arabic{footnote}}}
+
+\renewcommand*{\thesection}{\arabic{section}}
+
+\title{Разработка на тест върху тема Приложни програми от учебната програма по ИТ за 8. клас (ОП)}
+\author{
+  Елизабет Великова
+}
+% \date{2024-02-22}
+
+\pagestyle{fancy}
+\fancyhf{}
+% \rhead{\thetitle}
+% \rhead{Разработка на тест върху тема Приложни програми от учебната програма по ИТ за 8. клас (ОП)}
+\rhead{Разработка на тест върху тема Приложни програми}
+\fancyfoot[R]{\thepage}
+\lhead{
+    \theauthor
+}
+\rfoot{\thepage}
+
+\begin{document}
+% \maketitle
+\include{title_page}
+\tableofcontents
+
+\include{test}
+
+\printbibliography
+
+\end{document}
